@@ -1,4 +1,15 @@
-## window10 + python3.6.5 使用 face_recognition
+<p align="center">
+<img alt="" src="https://raw.githubusercontent.com/zhengpeiqiang/LCLCF_origin/master/zhengpeiqiang.png" style="border-radius:50%;margin: 0 auto;" width="20%" />
+</p>
+
+<h1 align="center">
+window10 + python3.6.5 使用 face_recognition
+</h1>
+
+### organization
+
+<a href="https://github.com/zhengpeiqiang"><img alt="" src="https://raw.githubusercontent.com/zhengpeiqiang/LCLCF_origin/master/LCLCF_circle.png" style="width:60px;height:60px;margin: 0 auto;" width="8%" /></a>
+**LCLCF**
 
 ### <font color='red'> ** 亲测 python 3.9 版本的几乎没办法引入 dlib 包；并且有说要引入vs 的也是很麻烦的，引入vs之后去 install dlib 非常的吃cpu，cpu瞬间100% **</font>
 
