@@ -1,24 +1,23 @@
-# Modeltools
-#### GO语言连接Mysql生成对应的model，包括对应字段类型、注释等。生成基础的结构体，不局限于某一个ORM。
- 
-  **源码码地址---------**
-  ##### github：[https://github.com/zhengpeiqiang/sqlGotomodel](https://github.com/zhengpeiqiang/sqlGotomodel)
-  ##### 码云：[https://gitee.com/zhengpeiqiang/sqlGotomodel](https://gitee.com/zhengpeiqiang/sqlGotomodel)
- 
- 
+## ![avatar](https://portrait.gitee.com/uploads/avatars/namespace/2645/7936029_no_anyone_care_1623389921.png!avatar60) L C L C F
 
- **生成示例---------**
+# 项目
 
-```go 
-  package models
+###### 【python_project】python项目合集
+    【face_recognition】 window10 + python3.6.5使用face_recognition
 
-  // 管理员表
-  type AdminInfo struct {
-  	Id int `json:"id"` 
-  	Name string `json:"name"` // 姓名
-  	Username string `json:"username"` // 用户名 
-  	Password string `json:"password"` // 密码
-  	RoleInfoId int `json:"role_info_id"` // 角色ID
-  	Status int8 `json:"status"` // -1删除，0正常，1禁用
-  }
-```
+###### 【go_project】go项目合集
+    【auto_make_code】    自动编码系统
+    【blockchain】        区块链项目
+    【fyne-use】          基于fyne做的app项目
+    【gospider】          爬虫项目
+    【origin】            自己搭建的一个基于gin的框架
+    【pressure】          压测系统
+    【test】              测试web服务
+
+##### 特别感谢
+
+[简单粗暴TensorFlow](https://v1.tf.wiki/zh/installation.html#id9)
+
+##### 友情链接
+
+[@PQ的学习日记](https://gitee.com/zhengpeiqiang/technical)

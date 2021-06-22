@@ -1,0 +1,99 @@
+definitions:
+  interfaceStruct.LoginInput:
+    properties:
+      id:
+        description: 用户id
+        example: 1
+        type: integer
+      openid:
+        description: 用户应用id
+        example: "1"
+        type: string
+      union_id:
+        description: 用户唯一id
+        example: "1"
+        type: string
+      user_id:
+        description: 用户userId
+        example: 1
+        type: integer
+    type: object
+  interfaceStruct.LoginOutput:
+    properties:
+      age:
+        description: 用户年龄
+        example: 1
+        type: integer
+      id:
+        description: 用户id
+        example: 1
+        type: integer
+      job:
+        description: 用户职业
+        example: "1"
+        type: string
+      name:
+        description: 用户昵称
+        example: "1"
+        type: string
+      openid:
+        description: 用户应用id
+        example: "1"
+        type: string
+      remark:
+        description: 用户备注
+        example: "1"
+        type: string
+      union_id:
+        description: 用户唯一id
+        example: "1"
+        type: string
+      user_id:
+        description: 用户userId
+        example: 1
+        type: integer
+    type: object
+  middleware.Response:
+    properties:
+      data:
+        type: object
+      errmsg:
+        type: string
+      errno:
+        type: integer
+      stack:
+        type: object
+      trace_id:
+        type: object
+    type: object
+info:
+  contact: {}
+paths:
+  /login:
+    post:
+      consumes:
+      - application/json
+      operationId: /login
+      parameters:
+      - description: body
+        in: body
+        name: polygon
+        required: true
+        schema:
+          $ref: '#/definitions/interfaceStruct.LoginInput'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            allOf:
+            - $ref: '#/definitions/middleware.Response'
+            - properties:
+                data:
+                  $ref: '#/definitions/interfaceStruct.LoginOutput'
+              type: object
+      summary: 登录
+      tags:
+      - 微信
+swagger: "2.0"
